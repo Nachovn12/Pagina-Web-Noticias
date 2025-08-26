@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noticias del Mundo</title>
+  
+  <!-- Normalize -->
+  <link rel="stylesheet" href="C:/Users/CETECOM/Desktop/Actividad_Web_Noticias/assets/css/normalize.css">
+  
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl md:text-2xl font-extrabold text-blue-700">Noticias del Mundo</h1>
+      <nav class="space-x-4 text-sm md:text-base">
+        <a href="index.html" class="hover:text-blue-600">Inicio</a>
+        <a href="deportes.html" class="hover:text-blue-600">Deportes</a>
+        <a href="cultura.html" class="hover:text-blue-600">Cultura</a>
+        <a href="mundo.html" class="hover:text-blue-600">Mundo</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="max-w-5xl mx-auto px-4 py-8 space-y-12">
+
+    <!-- NOTICIA PRINCIPAL -->
+    <article class="space-y-4">
+      <h2 class="text-3xl md:text-4xl font-extrabold leading-tight">
+        “Mintieron desde un principio”: Periodista de TNT Sports acusa a la prensa argentina…
+      </h2>
+
+      <!-- Autor -->
+      <div class="flex items-center gap-3 text-gray-600">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ7NbJsfa-UZF54Ml08a7e3gfOTPvZATqitw&s" alt="Autor" class="w-10 h-10 rounded-full object-cover">
+        <span class="text-sm"><strong>Por Ignacio Valeria</strong> | 25 de Agosto 2025</span>
+      </div>
+
+      <!-- Imagen Principal -->
+      <div class="w-full aspect-video bg-cover bg-center rounded-lg" style="background-image:url('https://www.lacuarta.com/resizer/v2/2ORCENN4TFBTJHD4OAD4PTX73Y.png?auth=acde410b84d94d3e148196911998bc5145d1e741c5e471ee3cbf4fe7a21e1149&smart=true&width=990&height=557&quality=70');"></div>
+
+      <!-- Bajada -->
+      <p class="text-lg text-gray-800 leading-relaxed">
+        Marcelo Díaz desmintió categóricamente los relatos transandinos que responsabilizaban a la hinchada azul
+        de los desmanes en el Libertadores de América, acusando falta de rigurosidad en la cobertura argentina.
+      </p>
+    </article>
+
+    <!-- MÁS NOTICIAS (CARDS) -->
+    <section>
+      <h3 class="text-2xl font-bold mb-6">Más noticias</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- CARD 1 -->
+        <article class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="aspect-video bg-cover bg-center" style="background-image:url('https://www.lacuarta.com/resizer/v2/55QRQVRZLNBILL4ZPHITBKOOCA.png?auth=85b7183c8d9b4385dacf8d69d2559ae8b5262bf3ead975145e94bf93c4147b9d&smart=true&width=990&height=557&quality=70');"></div>
+          <div class="p-4 flex flex-col flex-1">
+            <p class="text-xs text-gray-500 uppercase">Fútbol</p>
+            <h4 class="text-lg font-semibold text-gray-900 mt-1">Solo extranjeros: Gustavo Quinteros lidera la lista de candidatos para ser el entrenador de Colo Colo</h4>
+            <p class="text-sm text-gray-600 flex-1 mt-2">Varios nombres ya suenan para tomar la banca alba, incluyendo a un viejo conocido y un DT que ganó la Copa Libertadores.</p>
+            <a href="#" class="mt-4 inline-block text-sm font-medium text-blue-600 hover:underline">Leer más →</a>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="aspect-video bg-cover bg-center" style="background-image:url('https://www.marcachile.cl/wp-content/uploads/2021/07/vida-cultura-Tirana-principales-celebraciones-multiculturales-Chile-.jpg');"></div>
+          <div class="p-4 flex flex-col flex-1">
+            <p class="text-xs text-gray-500 uppercase">Cultura</p>
+            <h4 class="text-lg font-semibold text-gray-900 mt-1">Fiesta de La Tirana: Tradición que une fe y cultura en el norte de Chile</h4>
+            <p class="text-sm text-gray-600 flex-1 mt-2">La celebración de La Tirana volvió a reunir a miles de fieles y turistas en la Región de Tarapacá, donde danzas, música y devoción religiosa se mezclan en una de las expresiones culturales más importantes del país.</p>
+            <a href="#" class="mt-4 inline-block text-sm font-medium text-blue-600 hover:underline">Leer más →</a>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="aspect-video bg-cover bg-center" style="background-image:url('assets/img/noticia3.jpg');"></div>
+          <div class="p-4 flex flex-col flex-1">
+            <p class="text-xs text-gray-500 uppercase">Mundo</p>
+            <h4 class="text-lg font-semibold text-gray-900 mt-1">Título noticia 3</h4>
+            <p class="text-sm text-gray-600 flex-1 mt-2">Un adelanto atractivo para enganchar al lector.</p>
+            <a href="#" class="mt-4 inline-block text-sm font-medium text-blue-600 hover:underline">Leer más →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-600">
+      © 2025 Noticias del Mundo — Todos los derechos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
